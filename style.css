@@ -1,15 +1,15 @@
 :root 
 {
-  --color-primary: #5ec576;
+  --color-primary: #0366fc;
   --color-secondary: #ffcb03;
   --color-tertiary: #ff585f;
-  --color-primary-darker: #4bbb7d;
+  --color-primary-darker: #74aafc;
   --color-secondary-darker: #ffbb00;
   --color-tertiary-darker: #fd424b;
   --color-primary-opacity: #5ec5763a;
   --color-secondary-opacity: #ffcd0331;
   --color-tertiary-opacity: #ff58602d;
-  --gradient-primary: linear-gradient(to top left, #39b385, #9be15d);
+  --gradient-primary: linear-gradient(to top left, #74aafc, #9dc0f5);
   --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
 }
 

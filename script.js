@@ -31,11 +31,38 @@ document.addEventListener('keydown', function (e) {
   }
 });
 
-
+// Smmoth Scroll
 const btnScrollTo = document.querySelector('.btn--scroll-to');
 const viewSection1 = document.querySelector('#section--1');
 
 btnScrollTo.addEventListener('click', function(e)
 {
-    viewSection1.scrollIntoView({behaviour: 'smooth'});
+    viewSection1.scrollIntoView({behavior: 'smooth'});
+})
+
+// Page Navigation 1st method
+/*document.querySelectorAll('.nav__link').forEach(function(elt)
+{
+    elt.addEventListener('click', function(e)
+    {
+        e.preventDefault();
+        const id = this.getAttribute('href');
+        console.log(id);
+
+        document.querySelector(id).scrollIntoView({behavior: 'smooth'});
+    });
+});*/
+
+// Page Navigation 2nd method
+document.querySelector('.nav__links').addEventListener('click', function(e)
+{
+    e.preventDefault();
+
+    if(e.target.classList.contains('nav__link'))
+    {
+        const id = e.target.getAttribute('href');
+        console.log(id);
+
+        document.querySelector(id).scrollIntoView({behavior: 'smooth'});
+    };
 })

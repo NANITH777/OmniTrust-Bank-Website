@@ -227,10 +227,14 @@ const slider = function () {
   };
 
   // Next slide
-  const nextSlide = function () {
-    if (curSlide === maxSlide - 1) {
+  const nextSlide = function () 
+  {
+    if (curSlide === maxSlide - 1) 
+    {
       curSlide = 0;
-    } else {
+    } 
+    else 
+    {
       curSlide++;
     }
 
@@ -238,10 +242,14 @@ const slider = function () {
     activateDot(curSlide);
   };
 
-  const prevSlide = function () {
-    if (curSlide === 0) {
+  const prevSlide = function () 
+  {
+    if (curSlide === 0) 
+    {
       curSlide = maxSlide - 1;
-    } else {
+    } 
+    else 
+    {
       curSlide--;
     }
     goToSlide(curSlide);

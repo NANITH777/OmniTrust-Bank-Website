@@ -191,7 +191,8 @@ const imgObserver = new IntersectionObserver(loadImg, {
 imgTargets.forEach(img => imgObserver.observe(img));
 
 // Slider
-const slider = function () {
+const slider = function () 
+{
   const slides = document.querySelectorAll('.slide');
   const btnLeft = document.querySelector('.slider__btn--left');
   const btnRight = document.querySelector('.slider__btn--right');
@@ -201,7 +202,8 @@ const slider = function () {
   const maxSlide = slides.length;
 
   // Functions
-  const createDots = function () {
+  const createDots = function () 
+  {
     slides.forEach(function (_, i) {
       dotContainer.insertAdjacentHTML(
         'beforeend',
@@ -210,7 +212,8 @@ const slider = function () {
     });
   };
 
-  const activateDot = function (slide) {
+  const activateDot = function (slide) 
+  {
     document
       .querySelectorAll('.dots__dot')
       .forEach(dot => dot.classList.remove('dots__dot--active'));
@@ -284,4 +287,5 @@ const slider = function () {
     }
   });
 };
+
 slider();

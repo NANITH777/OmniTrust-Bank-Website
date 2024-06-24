@@ -648,6 +648,11 @@ h4 {
   text-decoration: none;
 }
 
+.footer__copyright span
+{
+  color: #0366fc;
+}
+
 /* MODAL WINDOW */
 .modal {
   position: fixed;

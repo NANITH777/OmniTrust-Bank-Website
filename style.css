@@ -653,6 +653,11 @@ h4 {
   color: #0366fc;
 }
 
+.footer__copyright span:hover {
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
 /* MODAL WINDOW */
 .modal {
   position: fixed;

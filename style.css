@@ -735,3 +735,74 @@ h4 {
   font-size: 1.5rem;
   font-weight: 400;
 }
+
+
+/* MEDIA QUERIES */
+
+/* Pour les écrans de taille moyenne (tablettes) */
+@media (max-width: 768px) {
+  .nav {
+    padding: 0 3rem;
+  }
+  
+  .nav__item {
+    margin-left: 2rem;
+  }
+  
+  .header {
+    padding: 0 1rem;
+  }
+  
+  .header__title {
+    grid-template-columns: 1fr;
+  }
+  
+  .features {
+    grid-template-columns: 1fr;
+    margin: 0 2rem;
+  }
+  
+  .footer {
+    padding: 5rem 1rem;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Pour les écrans de petite taille (mobiles) */
+@media (max-width: 480px) 
+{
+  html {
+    font-size: 50%;
+  }
+  
+  .nav {
+    padding: 0 1rem;
+  }
+  
+  .nav__item {
+    margin-left: 1rem;
+  }
+  
+  .header__title {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .features {
+    grid-template-columns: 1fr;
+    margin: 0 1rem;
+  }
+  
+  .footer {
+    padding: 2rem 1rem;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}

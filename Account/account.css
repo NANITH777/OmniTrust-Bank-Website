@@ -29,6 +29,28 @@ nav {
   font-weight: 500;
 }
 
+.back {
+  background-color: #3498db;
+  border: none;
+  padding: 0.5rem 2rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+  text-align: center;
+  width: 12rem;
+  border-radius: 10rem;
+  margin-right: 1rem;
+  color: inherit;
+  border: 1px solid #fff;
+  transition: all 0.3s;
+}
+
+.back-to-main {
+  color: #000;
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+}
+
 .logo {
   height: 5.25rem;
 }

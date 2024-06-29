@@ -4,8 +4,8 @@
 
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
-/*const btnCloseModal = document.querySelector(".btn--close-modal");
-const btnsOpenModal = document.querySelectorAll(".btn--show-modal");*/
+const btnCloseModal = document.querySelector(".btn--close-modal");
+const btnsOpenModal = document.querySelector(".btn--show-modal");
 
 const tabs = document.querySelectorAll(".operations__tab");
 const tabsContainer = document.querySelector(".operations__tab-container");
@@ -25,16 +25,24 @@ const closeModal = function (e) {
   overlay.classList.add("hidden");
 };
 
-/*btnsOpenModal.forEach((btn) => btn.addEventListener("click", openModal));
+btnsOpenModal.addEventListener("click", openModal);
 
 btnCloseModal.addEventListener("click", closeModal);
-overlay.addEventListener("click", closeModal);*/
+overlay.addEventListener("click", closeModal);
 
 document.addEventListener("keydown", function (e) {
   if (e.key === "Escape" && !modal.classList.contains("hidden")) {
     closeModal();
   }
 });
+
+document
+  .querySelectorAll(".modal__form input, .modal__header")
+  .forEach((input) => {
+    input.addEventListener("click", (e) => {
+      e.preventDefault();
+    });
+  });
 
 // Smmoth Scroll
 const btnScrollTo = document.querySelector(".btn--scroll-to");

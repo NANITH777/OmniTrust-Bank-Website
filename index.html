@@ -38,8 +38,8 @@
                     <a class="nav__link" href="#section--3">Testimonials</a>
                     </li>
                     <li class="nav__item">
-                    <a class="nav__link nav__link--btn btn--show-modal" href="#"
-                        >Open account</a
+                    <a class="nav__link nav__link--btn btn--show-modal" href="account.html"
+                        >Login</a
                     >
                     </li>
                 </ul>
@@ -338,16 +338,31 @@
         <div class="modal hidden">
             <button class="btn--close-modal">&times;</button>
             <h2 class="modal__header">
-              Open your bank account <br />
-              in just <span class="highlight">5 minutes</span>
+              Log in to your bank account <br />
             </h2>
-            <form class="modal__form">
+            <!--<form class="modal__form">
               <label>First Name</label>
               <input type="text" />
               <label>Last Name</label>
               <input type="text" />
               <label>Email Address</label>
               <input type="email" />
+              <button class="btn">Next step &rarr;</button>
+            </form>-->
+            <form class="modal__form">
+              <label>UserName</label>
+              <input
+                type="text"
+                placeholder="user"
+                class="login__input login__input--user"
+              />
+              <label>Password</label>
+              <input
+                type="text"
+                placeholder="PIN"
+                maxlength="4"
+                class="login__input login__input--pin"
+              />
               <button class="btn">Next step &rarr;</button>
             </form>
         </div>
